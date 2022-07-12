@@ -89,7 +89,7 @@ List_t Merge(List_t a, List_t b)
 			}
 		r = r->link;
 	}
-	// дописуЇмо "хвости"
+	// дописуЇмо Ђхвостиї
 	while (a != nullptr)
 	{
 		r->link = new ChainNode(a->elem);
@@ -136,7 +136,7 @@ void MergeAndCut(List_t& a, List_t& b)
 	// b м≥стить ланки, €к≥ ще не стали частиною результату
 	while (b != nullptr)
 	{
-		// ск≥льки ланок без зм≥ни зв'€зк≥в потрапл€ють в результат?
+		// ск≥льки ланок без зм≥ни зв'€зк≥в потрапл€ють у результат?
 		while (a->link != nullptr && a->link->elem < b->elem)
 			a = a->link;
 		// обм≥н: список b долучаЇтьс€ до результату,

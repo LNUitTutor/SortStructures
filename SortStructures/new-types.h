@@ -8,10 +8,10 @@ using std::string;
 using std::ifstream;
 using std::ofstream;
 
-struct DataEntry
+struct DataEntry   // елемент даних
 {
 	int key;
-	string value;  // для значення можна вказати довільний тип
+	string value;  // значення може мати довільний тип
 };
 // Для зручності роботи з даними перевантажимо оператори введення-виведення
 std::istream& operator>>(std::istream& is, DataEntry& e);
